@@ -15,9 +15,9 @@ docker-compose up --build
 
 ## Services:
 
-frontend: Available at http://localhost:5173
-backend: Runs on port 8080
-db: PostgreSQL container with default port 5432
+frontend: Available at http://localhost:5173 
+backend: Runs on port 8080 
+db: PostgreSQL container with default port 5432 
 
 ## 🔁 CI/CD Pipeline
 
@@ -42,19 +42,19 @@ Environment variables are managed via .env and secrets in CI.
 ## 📁 Project Structure
 
 project-kiii/
-├── BookEshop/             # Spring Boot backend
-├── bookeshopfrontend/     # React + Nginx frontend
-├── k8s/                   # Kubernetes manifests
-├── docker-compose.yml     # Compose file for local orchestration
-├── .github/workflows/     # GitHub Actions CI/CD pipeline
+├── BookEshop/             # Spring Boot backend 
+├── bookeshopfrontend/     # React + Nginx frontend 
+├── k8s/                   # Kubernetes manifests 
+├── docker-compose.yml     # Compose file for local orchestration 
+├── .github/workflows/     # GitHub Actions CI/CD pipeline 
 └── README.md 
 
 ## 🚀 Deployment
 
-Kubernetes manifests are deployed using:
-kubectl apply -f k8s/namespace.yaml
-kubectl apply -f k8s/
-You can access the frontend via Ingress once deployed.
+Kubernetes manifests are deployed using: 
+kubectl apply -f k8s/namespace.yaml 
+kubectl apply -f k8s/ 
+You can access the frontend via Ingress once deployed. 
 
 ## 🛠 Requirements
 
