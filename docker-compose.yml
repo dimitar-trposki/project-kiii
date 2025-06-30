@@ -16,6 +16,7 @@ services:
       - "2345:5432"
 
   backend:
+    image: dimitartrposki/project-kiii:backend
     build:
       context: ./BookEshop
     depends_on:
@@ -28,6 +29,7 @@ services:
       - "8080:8080"
 
   frontend:
+    image: dimitartrposki/project-kiii:frontend
     build:
       context: ./bookeshopfrontend
     ports:
