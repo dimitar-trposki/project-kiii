@@ -10,14 +10,14 @@ services:
       POSTGRES_DB: emc_bookeshop
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./BookEShop/init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./BookEShop/views.sql:/docker-entrypoint-initdb.d/views.sql
+      - ./BookEshop/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./BookEshop/views.sql:/docker-entrypoint-initdb.d/views.sql
     ports:
       - "2345:5432"
 
   backend:
     build:
-      context: ./BookEShop
+      context: ./BookEshop
     depends_on:
       - db
     environment:
