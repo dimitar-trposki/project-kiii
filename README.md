@@ -15,9 +15,9 @@ docker-compose up --build
 
 ## Services:
 
-frontend: Available at http://localhost:5173 
-backend: Runs on port 8080 
-db: PostgreSQL container with default port 5432 
+frontend: Available at http://localhost:5173  
+backend: Runs on port 8080  
+db: PostgreSQL container with default port 5432  
 
 ## 🔁 CI/CD Pipeline
 
