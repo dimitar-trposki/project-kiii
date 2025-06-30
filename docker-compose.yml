@@ -15,7 +15,7 @@ services:
 
   backend:
     build:
-      context: ./BookEShop
+      context: ./BookEshop
     depends_on:
       - db
     environment:
