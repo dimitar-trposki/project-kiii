@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   db:
     image: postgres:17.4
@@ -16,9 +14,8 @@ services:
       - "2345:5432"
 
   backend:
-    image: dimitartrposki/project-kiii:backend
     build:
-      context: ./BookEshop
+      context: ./BookEShop
     depends_on:
       - db
     environment:
@@ -29,7 +26,6 @@ services:
       - "8080:8080"
 
   frontend:
-    image: dimitartrposki/project-kiii:frontend
     build:
       context: ./bookeshopfrontend
     ports:
