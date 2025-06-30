@@ -41,7 +41,7 @@ Environment variables are managed via .env and secrets in CI.
 
 ## 📁 Project Structure
 
-project-kiii/
+project-kiii/  
 ├── BookEshop/             # Spring Boot backend  
 ├── bookeshopfrontend/     # React + Nginx frontend  
 ├── k8s/                   # Kubernetes manifests  
