@@ -27,7 +27,7 @@ public class DataInitializer {
         this.countryRepository = countryRepository;
     }
 
-        @PostConstruct
+//        @PostConstruct
     public void init() {
         Country USA = new Country("United States of America", "South America");
         Country UK = new Country("United Kingdom", "Europe");
