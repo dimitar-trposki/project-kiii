@@ -15,7 +15,7 @@ services:
 
   backend:
     build:
-      context: ./BookEShop
+      context: ./BookEshop
     image: dimitartrposki/project-kiii:backend
     depends_on:
       - db
